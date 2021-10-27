@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  background: #f5f3f7;
+  font-size: 8px;
+}
+
+.linear-background {
+  width: 80%;
+  height: 75%;
+  top: 0px;
+  left: -120px;
+  border-radius: 0% 0% 90% 50%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e942ff), to(#8838ff));
+  background: linear-gradient(#e942ff, #8838ff);
+  position: absolute;
+  z-index: -1;
+}
+
+.app {
+  margin: 2rem auto;
+  background: #f5f3f7;
+  border: 10px solid white;
+  border-radius: 25px;
+  overflow: hidden;
+  width: 35vh;
+  position: relative;
+}
+
+.app .top-app {
+  background: -webkit-gradient(linear, right top, left top, from(#e942ff), to(#8838ff));
+  background: linear-gradient(to left, #e942ff, #8838ff);
+  color: white;
+  line-height: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 7px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.app .top-app .blank-div {
+  width: 50%;
+  height: 5%;
+  border-radius: 25px;
+  background: white;
+  left: 55px;
+  top: -10px;
+  position: absolute;
+}
+
+.app .top-app .avatar {
+  margin-top: 1rem;
+}
+
+.app .top-app .name {
+  margin: 0 10px;
+  padding-top: 13px;
+}
+
+.app .top-app .availability {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.app .top-app .fas {
+  margin-top: 22px;
+}
+
+.app .top-app .fa-ellipsis-v {
+  margin-top: 20px;
+  margin-left: 3rem;
+}
+
+.app .top-app .avatar {
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+  border: 1px solid white;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+
+.app .main-app {
+  margin: 5px 2px;
+  padding: 0 5px;
+}
+
+.app .main-app .left-col p {
+  width: 50%;
+  padding: 5px;
+  border-radius: 10px;
+  background: rgba(198, 202, 205, 0.5);
+  color: #9241c8;
+}
+
+.app .main-app .left-col-gradient div {
+  width: 65%;
+  background: -webkit-gradient(linear, left top, right top, from(#e942ff), to(#8838ff));
+  background: linear-gradient(to right, #e942ff, #8838ff);
+  color: white;
+  border-radius: 10px;
+}
+
+.app .main-app .left-col-gradient p {
+  padding: 10px;
+}
+
+.app .main-app .left-col-gradient span {
+  font-weight: bold;
+  float: right;
+}
+
+.app .main-app .message-box {
+  width: 100%;
+  margin: 10px 0;
+  border-radius: 25px;
+  background: white;
+  padding: 1px;
+  position: relative;
+}
+
+.app .main-app .message-box p {
+  padding-left: 10px;
+  color: #a39daa;
+}
+
+.app .main-app .message-box i {
+  position: absolute;
+  top: 4px;
+  left: 170px;
+  background: #9241c8;
+  border-radius: 25px;
+  padding: 2px 6px;
+}
+
+.app .main-app .right-col .photos-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.app .main-app .right-col .photos-flex img {
+  width: 20%;
+  margin: 2px;
+  border-radius: 10px;
+}
+
+.app .main-app .right-col .messages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.app .main-app .right-col .messages p {
+  background: white;
+  border-radius: 10px;
+  max-width: 60%;
+  padding: 5px;
+}
+
+.features {
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 25px;
+}
+
+.features p {
+  font-size: 10px;
+  line-height: 2;
+  padding: 0 4rem;
+  color: #a39daa;
+}
+/*# sourceMappingURL=main.css.map */

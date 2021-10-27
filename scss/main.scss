@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
+
+// Text
+$pale-violet: hsl(276, 100%, 81%);
+$moderate-violet: hsl(276, 55%, 52%);
+$desaturated-dark-violet: hsl(271, 15%, 43%);
+$grayish-blue: hsla(206, 6%, 79%, 0.5);
+$very-dark-desaturated-violet: hsl(271, 36%, 24%);
+$dark-grayish-violet: hsl(270, 7%, 64%);
+
+// Gradients
+$light-magneta: hsl(293, 100%, 63%);
+$light-violet: hsl(264, 100%, 61%);
+
+// Secondary
+$white: hsl(0, 0%, 100%);
+$light-grayish-violet: hsl(270, 20%, 96%);
+$very-dark-desaturated-violet: hsl(271, 36%, 24%);
+$very-light-magneta: hsl(289, 100%, 72%);
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Rubik", sans-serif;
+	background: $light-grayish-violet;
+	font-size: 8px;
+}
+
+.linear-background {
+	width: 80%;
+	height: 75%;
+	top: 0px;
+	left: -120px;
+	border-radius: 0% 0% 90% 50%;
+	background: linear-gradient($light-magneta, $light-violet);
+	position: absolute;
+	z-index: -1;
+}
+
+.app {
+	margin: 2rem auto;
+	background: $light-grayish-violet;
+	border: 10px solid white;
+	border-radius: 25px;
+	overflow: hidden;
+	width: 35vh;
+	position: relative;
+
+	.top-app {
+		background: linear-gradient(to left, $light-magneta, $light-violet);
+		color: $white;
+		line-height: 0;
+		display: flex;
+		padding: 7px;
+		border-bottom-left-radius: 5px;
+		border-bottom-right-radius: 5px;
+
+		.blank-div {
+			width: 50%;
+			height: 5%;
+			border-radius: 25px;
+			background: white;
+			left: 55px;
+			top: -10px;
+			position: absolute;
+		}
+
+		.avatar {
+			margin-top: 1rem;
+		}
+
+		.name {
+			margin: 0 10px;
+			padding-top: 13px;
+		}
+
+		.availability {
+			color: rgba(255, 255, 255, 0.5);
+		}
+
+		.fas {
+			margin-top: 22px;
+		}
+
+		.fa-ellipsis-v {
+			margin-top: 20px;
+			margin-left: 3rem;
+		}
+
+		.avatar {
+			width: 25px;
+			height: 25px;
+			border-radius: 25px;
+			border: 1px solid white;
+			margin-left: 10px;
+			margin-top: 15px;
+		}
+	}
+
+	.main-app {
+		margin: 5px 2px;
+		padding: 0 5px;
+
+		.left-col {
+			p {
+				width: 50%;
+				padding: 5px;
+				border-radius: 10px;
+				background: $grayish-blue;
+				color: $moderate-violet;
+			}
+		}
+
+		.left-col-gradient {
+			div {
+				width: 65%;
+				background: linear-gradient(to right, $light-magneta, $light-violet);
+				color: white;
+				border-radius: 10px;
+			}
+
+			p {
+				padding: 10px;
+			}
+
+			span {
+				font-weight: bold;
+				float: right;
+			}
+		}
+
+		.message-box {
+			width: 100%;
+			margin: 10px 0;
+			border-radius: 25px;
+			background: white;
+			padding: 1px;
+			position: relative;
+
+			p {
+				padding-left: 10px;
+				color: $dark-grayish-violet;
+			}
+
+			i {
+				position: absolute;
+				top: 4px;
+				left: 170px;
+				background: $moderate-violet;
+				border-radius: 25px;
+				padding: 2px 6px;
+			}
+		}
+
+		.right-col {
+			.photos-flex {
+				display: flex;
+				justify-content: flex-end;
+
+				img {
+					width: 20%;
+					margin: 2px;
+					border-radius: 10px;
+				}
+			}
+
+			.messages {
+				display: flex;
+				justify-content: flex-end;
+
+				p {
+					background: $white;
+					border-radius: 10px;
+					max-width: 60%;
+					padding: 5px;
+				}
+			}
+		}
+	}
+}
+
+.features {
+	text-align: center;
+	h2 {
+		font-size: 25px;
+	}
+
+	p {
+		font-size: 10px;
+		line-height: 2;
+		padding: 0 4rem;
+		color: $dark-grayish-violet;
+	}
+}
