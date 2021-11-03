@@ -1,30 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap");
-
-// Text
-$pale-violet: hsl(276, 100%, 81%);
-$moderate-violet: hsl(276, 55%, 52%);
-$desaturated-dark-violet: hsl(271, 15%, 43%);
-$grayish-blue: hsla(206, 6%, 79%, 0.5);
-$very-dark-desaturated-violet: hsl(271, 36%, 24%);
-$dark-grayish-violet: hsl(270, 7%, 64%);
-
-// Gradients
-$light-magneta: hsl(293, 100%, 63%);
-$light-violet: hsl(264, 100%, 61%);
-
-// Secondary
-$white: hsl(0, 0%, 100%);
-$light-grayish-violet: hsl(270, 20%, 96%);
-$very-dark-desaturated-violet: hsl(271, 36%, 24%);
-$very-light-magneta: hsl(289, 100%, 72%);
+@use "./variables";
+@use "./resets";
 
 body {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
 	font-family: "Rubik", sans-serif;
 	background: $light-grayish-violet;
-	font-size: 8px;
 }
 
 .linear-background {
@@ -38,18 +18,24 @@ body {
 	z-index: -1;
 }
 
+.transparent-background {
+	display: none;
+}
+
 .app {
 	margin: 2rem auto;
 	background: $light-grayish-violet;
 	border: 10px solid white;
 	border-radius: 25px;
+	font-size: 8px;
 	overflow: hidden;
 	width: 35vh;
+	height: 100%;
 	position: relative;
 
 	.top-app {
 		background: linear-gradient(to left, $light-magneta, $light-violet);
-		color: $white;
+		color: white;
 		line-height: 0;
 		display: flex;
 		padding: 7px;
@@ -144,6 +130,8 @@ body {
 			}
 
 			i {
+				width: 8px;
+				display: inline-block;
 				position: absolute;
 				top: 4px;
 				left: 170px;
@@ -170,7 +158,7 @@ body {
 				justify-content: flex-end;
 
 				p {
-					background: $white;
+					background: white;
 					border-radius: 10px;
 					max-width: 60%;
 					padding: 5px;
@@ -182,6 +170,7 @@ body {
 
 .features {
 	text-align: center;
+	height: 100%;
 	h2 {
 		font-size: 25px;
 	}
@@ -191,5 +180,66 @@ body {
 		line-height: 2;
 		padding: 0 4rem;
 		color: $dark-grayish-violet;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.linear-background {
+		width: 55%;
+		height: 85%;
+		top: 0px;
+		left: -220px;
+		border-radius: 50% 50% 50% 50% / 0% 0% 100% 100%;
+	}
+	.transparent-background {
+		display: inline-block;
+		width: 25%;
+		height: 90%;
+		bottom: 0;
+		right: 0;
+		border-radius: 50% 50% 0% 0%;
+		background: linear-gradient($light-magneta, $light-violet);
+		opacity: 0.05;
+		position: absolute;
+		z-index: -1;
+	}
+
+	.container {
+		display: flex;
+
+		.app {
+			margin: 5rem auto;
+			left: 10rem;
+
+			.top-app {
+				i {
+					margin-right: 17px;
+				}
+			}
+
+			.main-app {
+				.message-box {
+					i {
+						margin-left: 20px;
+					}
+				}
+			}
+		}
+
+		.features {
+			text-align: left;
+			margin: auto;
+			width: 350px;
+			padding: 1rem 1rem 1rem 5rem;
+
+			h2 {
+				font-size: 30px;
+			}
+
+			p {
+				padding: 0;
+				font-size: 12px;
+			}
+		}
 	}
 }

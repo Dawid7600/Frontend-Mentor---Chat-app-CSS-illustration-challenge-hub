@@ -22,6 +22,7 @@ Users should be able to:
 ### Screenshot
 
 ![Mobile Version](./screenshots/mobile-version.png)
+![Desktop Version](./screenshots/desktop-version.png)
 
 ### Links
 
